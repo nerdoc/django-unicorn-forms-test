@@ -1,0 +1,3 @@
+django
+django-unicorn
+django-crispy-forms
