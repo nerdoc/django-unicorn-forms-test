@@ -1,5 +1,5 @@
 """
-ASGI config for django_unicorn_test project.
+ASGI config for django_unicorn_forms_test project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
