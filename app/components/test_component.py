@@ -4,9 +4,13 @@ from ..models import Foo
 
 
 class ExampleForm(forms.Form):
+    c = forms.CharField(max_length=23)
+
+
+class ExampleModelForm(forms.ModelForm):
     class Meta:
         model = Foo
-        fields=["name"]
+        fields = ["name"]
 
 
 class TestComponentView(UnicornView):
