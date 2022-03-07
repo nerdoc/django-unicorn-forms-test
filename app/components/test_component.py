@@ -12,3 +12,4 @@ class ExampleForm(forms.Form):
 class TestComponentView(UnicornView):
     # template_name = "unicorn/test_component.html"
     form = ExampleForm
+    count = 1
