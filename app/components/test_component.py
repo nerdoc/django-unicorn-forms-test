@@ -15,6 +15,10 @@ class ExampleModelForm(forms.ModelForm):
 
 class TestComponentView(UnicornView):
     # template_name = "unicorn/test_component.html"
-    form = ExampleForm
-    # form = ExampleModelForm
+    # form = ExampleForm
+    form_class = ExampleModelForm
     count = 1
+
+    def get_form(self):
+        # Instantiate the form with the component's attributes
+        return self.form_class(self._attributes())
